@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Prediction</title>
+</head>
+<body>
+    <h1>Predict Fire Risk</h1>
+    <form action="/predict" method="post">
+        <label for="day">Day:</label>
+        <input type="number" id="day" name="day" required><br><br>
+        <label for="month">Month:</label>
+        <input type="number" id="month" name="month" required><br><br>
+        <label for="year">Year:</label>
+        <input type="number" id="year" name="year" required><br><br>
+        <label for="Temperature">Temperature:</label>
+        <input type="number" id="Temperature" name="Temperature" required><br><br>
+        <label for="RH">Relative Humidity:</label>
+        <input type="number" id="RH" name="RH" required><br><br>
+        <label for="Ws">Wind Speed:</label>
+        <input type="number" id="Ws" name="Ws" required><br><br>
+        <label for="Rain">Rain:</label>
+        <input type="number" id="Rain" name="Rain" required><br><br>
+        <label for="FFMC">FFMC:</label>
+        <input type="number" step="0.1" id="FFMC" name="FFMC" required><br><br>
+        <label for="DMC">DMC:</label>
+        <input type="number" step="0.1" id="DMC" name="DMC" required><br><br>
+        <label for="DC">DC:</label>
+        <input type="number" step="0.1" id="DC" name="DC" required><br><br>
+        <label for="ISI">ISI:</label>
+        <input type="number" step="0.1" id="ISI" name="ISI" required><br><br>
+        <label for="BUI">BUI:</label>
+        <input type="number" step="0.1" id="BUI" name="BUI" required><br><br>
+        <label for="Region">Region:</label>
+        <input type="number" id="Region" name="Region" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
